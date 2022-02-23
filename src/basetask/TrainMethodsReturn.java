@@ -1,6 +1,7 @@
 package basetask;
 
 public class TrainMethodsReturn {
+
     public int returnNewInt(int x) {
         return x * 3;
     }

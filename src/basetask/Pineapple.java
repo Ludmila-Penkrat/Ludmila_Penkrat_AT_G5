@@ -39,7 +39,7 @@ public class Pineapple {
     }
 
     public void printPineappleDetails(){
-        if (heatCapacity > 2140){
+        if (this.heatCapacity > 2140){
             System.out.println("Я ананас, теплоемкость которого больше, чем у ветчины");
         } else {
             System.out.println("В Ветчине тепла запасается больше :(");

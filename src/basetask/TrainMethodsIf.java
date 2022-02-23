@@ -35,23 +35,20 @@ public class TrainMethodsIf {
     }
 
     public double returnNewDouble(double ff) {
-        if (ff > 30 & ff < 80) {
+        if (ff > 30 && ff < 80) {
             return ff + 87;
-        }
-        if (ff > 80 & ff < 400) {
+        } else if (ff > 80 && ff < 400) {
             return ff - 87;
-        }
-        if (ff > 400) {
+        } else if (ff > 400) {
             return ff / 4;
         } else {
             return ff;
         }
     }
-    public void returnNewBoolean (boolean gg){
-        if (gg == true){
+
+    public void returnNewBoolean(boolean gg) {
+        if (gg) {
             System.out.println("Я получил на вход значение истины");
         }
     }
-
-
 }

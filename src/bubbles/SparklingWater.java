@@ -2,22 +2,30 @@ package bubbles;
 
 public class SparklingWater extends Water {
 
-    Bubble bubble = new Bubble();
-    Bottle bottle = new Bottle();
+    Bubble[] bubbles;
+    double volume;
 
-        int[] bubbles = new int[(int)bottle.getBottlevolume() * 10000];
+    public SparklingWater() {
+        super();
+        this.bubbles = bubbles;
+        this.volume = volume;
+        this.bubbles = new Bubble[];
+    }
 
-        public void pump () {
-            for (int i=0; i < bubbles.length; i++);
+    public void pump(Bubble[] bubbles) {
+        this.bubbles = new Bubble[(int) 10000 * this.volume];
+        for (int i = 0; i < bubbles.length; i++) {
+            bubbles[i] = new Bubble("CO2");
+
         }
 
         public void degas () {
             for (int i = bubbles.length - 1; i >= 0; i--) {
-                bubble[i] = new Bubble();
-                bubble.explosion();
+                bubbles[i] = new Bubble("CO2");
+                Bubble.cramp();
             }
-
-
         }
     }
+}
+
 

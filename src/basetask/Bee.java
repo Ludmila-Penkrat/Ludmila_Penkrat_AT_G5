@@ -35,7 +35,7 @@ public class Bee {
     }
 
     public void printBeeDetails() {
-        long y = (500*1000)/weight;
+        long y = (500*1000)/this.weight;
         System.out.println("Я легче лося в " + y + " раз");
     }
 }

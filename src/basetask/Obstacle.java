@@ -35,6 +35,6 @@ public class Obstacle {
 
     public void printObstacleDetails(){
 
-        System.out.println("Возникло " + severity + " препятствие " + description);
+        System.out.println("Возникло " + this.severity + " препятствие " + this.description);
     }
 }

@@ -18,7 +18,7 @@ public class ReverseArray {
 
         System.out.print(" |  ");
 
-        for (int i = newArray.length-1; i >= 0; i--){ // почему указывается -1?
+        for (int i = newArray.length-1; i >= 0; i--){
             System.out.print(newArray[i] + " ");
         }
     }
