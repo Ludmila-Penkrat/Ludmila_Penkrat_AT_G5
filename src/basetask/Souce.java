@@ -40,6 +40,6 @@ public class Souce {
 
     public void printSouseDetails (){
 
-        System.out.println("Это соус " + name + " " + color + " цвета");
+        System.out.println("Это соус " + this.name + " " + this.color + " цвета");
     }
 }

@@ -1,6 +1,7 @@
 package basetask;
 
 public class TrainMethodsString {
+
     public void printMama() {
         System.out.println("Мама мыла раму");
     }

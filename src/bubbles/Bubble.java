@@ -2,21 +2,14 @@ package bubbles;
 
 public class Bubble {
 
-    public final double volume = 0.3;
-    private String gaz;
+    public static final double VOLUME = 0.3;
+    private String gas;
 
-    public Bubble() {
+    public Bubble(String gas) {
+        this.gas = gas;
     }
 
-    public String getGaz() {
-        return gaz;
-    }
-
-    public void setGaz(String gaz) {
-        this.gaz = gaz;
-    }
-
-    public void explosion(){
+    public static void cramp(){  // не поняла почему поросила идея сделать этот метод static?
         System.out.println("Cramp!");
     }
 }
