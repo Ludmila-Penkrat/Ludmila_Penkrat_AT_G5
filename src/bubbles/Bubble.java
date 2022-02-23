@@ -10,6 +10,6 @@ public class Bubble {
     }
 
     public static void cramp(){  // не поняла почему поросила идея сделать этот метод static?
-        System.out.println("Cramp!");
+        System.out.print("Cramp!");
     }
 }
