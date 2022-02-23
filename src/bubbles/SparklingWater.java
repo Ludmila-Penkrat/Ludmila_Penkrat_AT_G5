@@ -6,19 +6,16 @@ public class SparklingWater extends Water {
     double volume;
 
     public SparklingWater() {
-        super();
-        this.bubbles = bubbles;
-        this.volume = volume;
-        this.bubbles = new Bubble[];
+        this.bubbles = new Bubble[(int) (10000 * this.volume)];
     }
 
     public void pump(Bubble[] bubbles) {
-        this.bubbles = new Bubble[(int) 10000 * this.volume];
+        this.bubbles = bubbles;
         for (int i = 0; i < bubbles.length; i++) {
             bubbles[i] = new Bubble("CO2");
 
         }
-
+    }
         public void degas () {
             for (int i = bubbles.length - 1; i >= 0; i--) {
                 bubbles[i] = new Bubble("CO2");
@@ -26,6 +23,6 @@ public class SparklingWater extends Water {
             }
         }
     }
-}
+
 
 

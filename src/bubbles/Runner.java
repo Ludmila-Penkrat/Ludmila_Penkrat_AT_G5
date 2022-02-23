@@ -8,7 +8,9 @@ public class Runner {
         Bottle bottlethird = new Bottle(1.5);
 
         bottlefirst.open();
+        System.out.println();
         bottlesecond.open();
+        System.out.println();
         bottlethird.open();
 
 
