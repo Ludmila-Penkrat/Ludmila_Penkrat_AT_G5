@@ -4,6 +4,7 @@ public class SparklingWater extends Water {
 
     Bubble[] bubbles;
     double volume;
+    private boolean open;
 
     public SparklingWater() {
         this.bubbles = new Bubble[(int) (10000 * this.volume)];
