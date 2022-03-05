@@ -2,10 +2,10 @@ package project.water;
 
 public abstract class Water {
 
-    private String color;
-    private String transparency;
-    private String smell;
-    private  double temperature;
+    private String color = "no";
+    private String transparency = "transparent";
+    private String smell = "no";
+    private int temperature = 0;
 
     public Water() {
     }
@@ -38,7 +38,7 @@ public abstract class Water {
         return temperature;
     }
 
-    public void setTemperature(double temperature) {
+    public void setTemperature(int temperature) {
         this.temperature = temperature;
     }
 
