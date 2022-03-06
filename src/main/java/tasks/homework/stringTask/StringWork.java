@@ -25,16 +25,5 @@ public class StringWork {
             System.out.print(newStr2[i] + " ");
         }
 
-        System.out.println();
-
-        String log = "access_log.2020.09.07 212.168.101.5 granted\n" +
-                "access_log.2020.09.07 212.168.101.6 denied\n" +
-                "access_log.2020.09.07 212.168.101.6 denied\n" +
-                "access_log.2020.09.07 212.168.101.5 granted\n" +
-                "access_log.2020.09.07 212.168.101.5 granted\n";
-
-        String change = log.replaceAll("access_log.\\d{4}.\\d{2}.\\d{2}", "");
-        String[] arrayFromString = change.split("[\\r\\n]");
-
     }
 }

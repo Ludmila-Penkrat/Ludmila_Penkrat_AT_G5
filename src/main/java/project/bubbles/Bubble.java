@@ -2,7 +2,7 @@ package project.bubbles;
 
 public class Bubble {
 
-    public static final double VOLUME = 0.3;
+    private static final double VOLUME = 0.3;
     private String gas;
 
     public Bubble(String gas) {
@@ -11,5 +11,9 @@ public class Bubble {
 
     public static void cramp(){  // не поняла почему поросила идея сделать этот метод static?
         System.out.print("Cramp!");
+    }
+
+    public double getVolume(){
+        return VOLUME;
     }
 }

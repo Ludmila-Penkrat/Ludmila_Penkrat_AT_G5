@@ -6,6 +6,7 @@ import project.water.SparklingWater;
 public class Bottle {
 
     private double volume;
+    private SparklingWater water;
     Bubble[] bubbles;
     SparklingWater sparklingWater = new SparklingWater();
 
@@ -24,4 +25,16 @@ public class Bottle {
         sparklingWater.degas();
 
     }
+
+    public void warm (int temperature){
+        this.sparklingWater.getTemperature();
+
+    }
+    public SparklingWater getWater(){
+        return this.water;
+    }
+    public void setWater (SparklingWater water){
+        this.setWater(water);
+    }
+
 }
