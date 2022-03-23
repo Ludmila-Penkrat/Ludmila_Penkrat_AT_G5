@@ -10,17 +10,14 @@ public class SparklingWater extends Water {
 
 
     public SparklingWater() {
-        this.bubbles = new Bubble[(int) (10000 * this.volume)];
+        this.volume = volume;
         isOpened();
     }
 
     public void pump(Bubble[] bubbles) {
         this.bubbles = bubbles;
-        for (int i = 0; i < bubbles.length; i++) {
-            bubbles[i] = new Bubble("CO2"); //this.bubbles = bubbles должно быть
-
-        }
     }
+
     public void setOpened (boolean isOpened){
         if (isOpened){
             this.isOpened();

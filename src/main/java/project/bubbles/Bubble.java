@@ -9,11 +9,11 @@ public class Bubble {
         this.gas = gas;
     }
 
-    public static void cramp(){  // не поняла почему поросила идея сделать этот метод static?
+    public static void cramp() {  // не поняла почему поросила идея сделать этот метод static?
         System.out.print("Cramp!");
     }
 
-    public double getVolume(){
+    public double getVolume() {
         return VOLUME;
     }
 }
