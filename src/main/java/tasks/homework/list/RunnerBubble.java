@@ -1,0 +1,39 @@
+package tasks.homework.list;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class RunnerBubble {
+
+    public static void main(String[] args) {
+
+
+        List<Bubble> bubbles = Arrays.asList(
+                new Bubble(2, "CO2"),
+                new Bubble(4, "O2"),
+                new Bubble(5,"CO")
+        );
+
+
+        for (Bubble bubbleVolume : bubbles){
+            System.out.print(bubbleVolume.getVolume() + " ");
+        }
+        System.out.println();
+
+        for (Bubble bubbleName : bubbles){
+            System.out.print(bubbleName.getName() + " ");
+        }
+        System.out.println();
+
+
+        int sum = 0;
+        for (Bubble bub : bubbles){
+            sum += bub.getVolume();
+        }
+        System.out.println(sum);
+
+        for (int i = 0; i < bubbles.size(); i++){
+            System.out.println(bubbles.get(i));
+        }
+    }
+}

@@ -1,9 +1,8 @@
 package tasks.homework.list;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Countries {
 
@@ -15,16 +14,15 @@ public class Countries {
         myList.add("Great Britain");
         myList.add("Zambia");
 
-        for (String str : myList) {
-            System.out.print(", " + str);
-        }
+        String str1 = String.join(", ", myList);
+        System.out.print(str1);
 
         System.out.println();
 
-        Iterator<String> iter = myList.iterator();
-        while (iter.hasNext()) {
-            System.out.print(iter.next() + ", ");
-        }
+        String allCountries = myList.stream().map(i -> i.toString()).collect(Collectors.joining(", "));
+        System.out.print(allCountries);
+
+
         System.out.println();
 
         int count = 0;

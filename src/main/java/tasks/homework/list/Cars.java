@@ -10,21 +10,23 @@ public class Cars {
     public static void main(String[] args) {
 
         Set<String> myList = new HashSet<>();
-        String [] str = "Мерс, Ауди, Жигуль, Рено, Жигуль, Жигуль, Ауди".split(", ");
+        String[] str = "Хендай, Ауди, Жигуль, Рено, Субару, Жигуль, Ауди".split(", ");
 
-        for (String s : str){
+        for (String s : str) {
             myList.add(s);
             System.out.println("\"" + s + "\"");
         }
 
         Iterator<String> iterator = myList.iterator();
-        while (iterator.hasNext()){
-            if (iterator.next().length() <=4){
-                System.out.println(iterator.next());
-            } else {
+        while (iterator.hasNext()) {
+            String nextIterator = iterator.next();
+            if (nextIterator.length() <= 4) {
                 iterator.remove();
             }
-       }
-        System.out.println(iterator.next());
+        }
+        for (String my : myList) {
+            System.out.print(my + " ");
+        }
+
     }
 }
