@@ -14,9 +14,9 @@ public class Figures {
 
         List<String> myList = Arrays.asList("Овал", "Прямоугольник", "Круг", "Квадрат", "Эллипс");
 
-        for (String str : myList){
-            fw.write("\"" + str + "\"" + " ");
-        }
+        String str1 = String.join("-", myList);
+            fw.write(str1);
+
         fw.close();
 
         int count = 0;
